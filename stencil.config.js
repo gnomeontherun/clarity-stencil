@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['my-name'] }
+    { components: ['clr-icon'] }
   ],
   collections: [
     { name: '@stencil/router' }
