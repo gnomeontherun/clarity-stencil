@@ -17,8 +17,24 @@
 </head>
 <body>
 
-  <clr-icon shape="check" size="36"></clr-icon>
-  <clr-icon shape="times" size="36"></clr-icon>
+  <!-- <clr-icon shape="check" size="36"></clr-icon>
+  <clr-icon shape="times" size="36"></clr-icon> -->
+
+  <clr-spinner label="loading"></clr-spinner>
+
+  <clr-progress-bar id="progress"></clr-progress-bar>
+
+  <script>
+    var progress = document.getElementById('progress');
+    var value = 0;
+    setInterval(() => {
+      value += 5;
+      progress.setAttribute('value', value);
+      if (value >= 100) {
+        value = 0;
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
